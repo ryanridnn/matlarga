@@ -1,0 +1,171 @@
+body{
+	background: var(--light-yellow);
+	overflow: hidden;
+	max-height: 100vh;
+}
+
+#mainScreen{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#mainScreen nav{
+	min-height: 85px;
+	background: var(--pure-white);
+	box-shadow: 0 0 10px 15px #eeeeeeaa;
+}
+
+#mainScreen nav .container{
+	justify-content: flex-end
+}
+
+#mainScreen nav .nav-link{
+	padding: .7rem 1.2rem .5rem .8rem;
+	background: var(--yellow);
+	color: var(--dark-grey);
+	font-size: .9rem;
+	font-weight: 600;
+}
+
+#mainScreen .hero{
+	flex: 1;
+}
+
+#mainScreen .hero .container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#mainScreen .hero #logo{
+	padding: .8em 1.3em .7em .8em;
+	background: var(--light-blue);
+	font-size: .85rem;
+	font-weight: 700;
+	letter-spacing: .3px;
+}
+
+#mainScreen h1{
+	margin: 1rem 0 1.4rem;
+}
+
+#mainScreen #nameForm{
+	background: var(--form-yellow);
+}
+
+#mainScreen #formError{
+	display: flex;
+	align-items: center;
+	margin: 1.5rem 0 0 1rem;
+	font-style: italic;
+	opacity: 0;
+	user-select: none;
+}
+
+#mainScreen #formError.show{
+	opacity: 1;
+}
+
+#mainScreen #formError .icon{
+	width: 20px;
+	height: 20px;
+	margin-right: 1rem;
+	background: var(--light-red);
+}
+
+#roomChoosingScreen{
+	position: absolute;
+	top: 0;
+	right: -100%;
+	width: 100vw;
+	height: 100vh;
+	background: var(--light-yellow);
+	transition: .6s ease;
+}
+
+#roomChoosingScreen.show{
+	transform: translate(-100%, 0);
+}
+
+#roomChoosingScreen .container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+#roomChoosingScreen #closeRoomChoosingScreen{
+	position: absolute;
+	top: 20px;
+	right: 0;
+	height: 40px;
+	width: 40px;
+	background: var(--light-red);
+	transition: .2s ease;
+}
+
+#roomChoosingScreen #closeRoomChoosingScreen:focus{
+	transform: scale(.8);
+}
+
+#roomChoosingScreen h1{
+	margin-top: 2rem;
+}
+
+#roomChoosingScreen .container > .text{
+	margin: 1.2rem 0 2.2rem;
+}
+
+#roomChoosingScreen .selection button{
+	display: flex;
+	flex-direction: column;
+	padding: 1.7rem 1.8rem;
+	width: 100%;
+	text-align: left;
+	transition: .2s ease;
+}
+
+#roomChoosingScreen .selection button:focus{
+	transform: scale(.98);
+}
+
+#roomChoosingScreen .selection button h2{
+	margin-bottom: .4rem;
+}
+
+#roomChoosingScreen .selection #createRoom{
+	margin-bottom: 1.5rem;
+	background: var(--yellow);
+}
+
+#roomChoosingScreen .selection #joinRoom{
+	background: var(--dark-grey);
+	color: var(--pure-white);
+}
+
+#roomChoosingScreen .selection #joinRoom .text{
+	color: var(--grey);
+}
+
+#bottomWidget .notification .container,
+#bottomWidget .loader .container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 6rem;
+	margin-bottom: 2rem;
+}
+
+#bottomWidget .notification button#tryRefill{
+	display: inline-block;
+	margin-left: 1rem;
+	font-style: italic;
+	align-self: center;
+	background: var(--light-blue);
+}
+
+#bottomWidget .notification button#tryRefill:focus{
+	background: var(--blue);
+	color: var(--pure-white);
+}

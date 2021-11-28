@@ -1,0 +1,17 @@
+{
+  "name": "matlarga",
+  "version": "1.0.0",
+  "description": "Matlarga adalah website permainan ular tangga yang dipadu dengan teka-teki matematika",
+  "main": "server.js",
+  "scripts": {
+  	"start": "node server",
+  	"dev": "nodemon server"
+  },
+  "author": "Rory Muhammad Ridwan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}

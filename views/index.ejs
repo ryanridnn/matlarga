@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Selamat Datang di Matlarga</title>
+	<link rel="stylesheet" href="./public/css/main.css">
+	<link rel="stylesheet" href="./public/css/mainPage/style.css">
+</head>
+<body>
+	
+	<div class="screen" id="mainScreen">
+		<div class="popup">
+			Tidak dapat bergabung, perhatikan pesan error!
+		</div>
+		<nav>
+			<div class="container">
+				<ul class="nav-links">
+					<li class="nav-item">
+						<a href="" class="nav-link rounded-box">
+							<div class="icon"></div>
+							 Tentang
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="hero">
+			<div class="container">
+				<div class="rounded-box" id="logo">
+					<div class="icon"></div>
+					Matlarga
+				</div>
+				<h1 class="header">Matematika, Ular, dan Tangga</h1>
+				<div class="text">
+					Masukkan namamu, lalu tekan tombol gabung untuk memulai game!
+				</div>
+				<form class="form" id="nameForm">
+					<input type="text" id="nameInput" placeholder="nama_kamu">
+					<button id="nameFormButton">Gabung</button>
+				</form>
+				<div class="error" id="formError">
+					<div class="icon"></div>
+					<span id="errorMessage">nama tidak boleh menggunakan spasi!</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="screen" id="roomChoosingScreen">
+		<div class="container">
+			<button class="rounded-box" id="closeRoomChoosingScreen"></button>
+			<h1 class="header">Mantabbb, gan!!!</h1>
+			<div class="text">Buat room-mu sendiri, atau gabung dengan room milik temanmu!</div>
+			<div class="selection">
+				<button class="rounded-box" id="createRoom">
+					<h2 class="header">Buat Room Sendiri</h2>
+					<span class="text">Buat room-mu, lalu undang teman-temanmu</span>
+				</button>
+				<button class="rounded-box" id="joinRoom">
+					<h2 class="header">Gabung dengan temanmu</h2>
+					<span class="text">Gabung menggunakan kode room temanmu</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="bottomWidget">
+		<div class="topbar default">
+			<div class="container">
+				<h3 class="header">Masukkan Kode Room Temanmu</h3>
+				<div class="close show"></div>
+			</div>
+		</div>
+		<div class="mainbar show">
+			<div class="container">
+				<form class="form" id="roomCodeForm">
+					<input type="text" id="roomCodeInput" placeholder="Kode Room">
+					<button id="nameFormButton">Gabung</button>
+				</form>
+			</div>
+		</div>
+		<div class="loader">
+			<div class="container">
+				Sedang mencari room tersebut...
+			</div>
+		</div>
+		<div class="notification">
+			<div class="container">
+				<span class="errorMessage"></span>
+				<button class="rounded-box" id="tryRefill">Isi Lagi!</button>
+			</div>
+		</div>
+	</div>
+	<div id="overlay"></div>
+
+	<script src="./public/js/mainPage/index.js"></script>
+</body>
+</html>
